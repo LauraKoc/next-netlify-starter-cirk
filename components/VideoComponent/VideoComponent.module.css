@@ -1,0 +1,8 @@
+.videoContainer {
+  /* max-width: 1240px;
+  margin: 0 auto; */
+}
+
+.videoContainer .video {
+  width: 100%;
+}

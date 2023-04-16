@@ -1,23 +1,49 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import VideoComponent from "../components/VideoComponent/VideoComponent";
+import Card from "../components/Cards/card";
+import About from "../components/About/about";
+import styles from "../styles/Home.module.css";
 
-export default function Home() {
+
+const Home = () => {
+  const { locale, locales, push } = useRouter();
+
+  const { t: translate } = useTranslation("about");
+
   return (
-    <div className="container">
-      <Head>
-        <title>Next.js Starter!</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <>
+      <VideoComponent />
+      <About />
+      <div className={styles.cardContainer}>
+        <Card
+          title={translate("Aerial ring")}
+          description={translate("description")}
+          href={locale + `/ring`}
+        />
+        <Card
+          title={translate("Clown ZAKO")}
+          description={translate("description")}
+          href={locale + `/clown`}
+        />
+        <Card
+          title={translate("Aerial silks duo")}
+          description={translate("description")}
+          href={locale + `/silks_duo`}
+        />
+      </div>
+    </>
+  );
+};
 
-      <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-      </main>
-
-      <Footer />
-    </div>
-  )
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["about"])),
+      // Will be passed to the page component as props
+    },
+  };
 }
+
+export default Home;
