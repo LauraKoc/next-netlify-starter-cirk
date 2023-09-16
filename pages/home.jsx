@@ -1,9 +1,9 @@
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import VideoComponent from "./component/VideoComponent/VideoComponent";
-import Card from "./component/Cards/card";
-import About from "./component/About/about";
+import VideoComponent from "../components/VideoComponent/VideoComponent";
+import Card from "../components/Cards/card";
+import About from "../components/About/about";
 import styles from "../styles/Home.module.css";
 
 

@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import Card from "./component/Cards/card";
+import Card from "../components/Cards/card";
 import styles from "../styles/Aviso.module.css";
 
 const Aviso = () => {
