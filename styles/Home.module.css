@@ -25,10 +25,11 @@
 }
 
 .active {
-  color: red;
+  color: #ba414e;
+  font-weight: bold;
 }
 .links {
-  text-decoration: underline;
+  /* text-decoration: underline; */
   margin: 20px;
 }
 .mob_menu {
@@ -39,6 +40,7 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .nav_container {
@@ -46,6 +48,8 @@
   flex-direction: column;
   margin: 0 auto;
 }
+
+
 
 .image_logo {
   display: flex;
@@ -58,10 +62,15 @@
   margin: 20px;
 }
 
+
+
 .cardContainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
+
 
 @media (min-width: 1024px) {
   .mob_menu {
@@ -100,4 +109,11 @@
     margin: 0 50px;
     align-items: center;
   }
+  
+  .cardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+ 
 }

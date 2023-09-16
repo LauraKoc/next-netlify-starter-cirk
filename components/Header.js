@@ -16,6 +16,7 @@ const Header = () => {
   /* to do lang switch on page */
   const handleClick = (l) => () => {
     push("", undefined, { locale: l });
+    setmobMenu(!mobMenu);
   };
   const router = useRouter();
   const [mobMenu, setmobMenu] = useState(false);

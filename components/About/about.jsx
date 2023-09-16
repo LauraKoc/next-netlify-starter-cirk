@@ -8,7 +8,7 @@ function About() {
 	const { t: translate } = useTranslation('about')
   return (
    
-      <div className={style.container}>
+      <div className={`${style.container}`}>
         <h2>{translate("title")}</h2>
         <p>{translate("description")}</p>
       </div>
