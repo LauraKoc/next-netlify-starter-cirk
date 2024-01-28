@@ -1,20 +1,24 @@
+@import url(https://db.onlinewebfonts.com/c/2596224269750e00c3ad5356299a3b9f?family=Ogg+Roman);
+@import url(https://db.onlinewebfonts.com/c/bf9f5d50c1b928ff21436517a1a95ad9?family=Proxima+Nova);
+
 .header_section,
 .mob_nav {
+  
   max-width: 1240px;
   display: flex;
   margin: 0 auto;
   flex-direction: row;
   justify-content: space-between;
   background-color: transparent;
-  padding: 20px;
-  font-family: 'Playfair Display', serif;
+  padding: 10px;
+  font-family: "Ogg Roman";
 }
 .mob_nav {
   display: none;
 }
 .menu {
   position: absolute;
-  top: 15%;
+  top: 5%;
   width: 100%;
   left: 0;
   margin: 0 auto;
@@ -30,7 +34,7 @@
 }
 .links {
   /* text-decoration: underline; */
-  margin: 20px;
+  margin: 0 20px;
 }
 .mob_menu {
   display: flex;
@@ -49,8 +53,6 @@
   margin: 0 auto;
 }
 
-
-
 .image_logo {
   display: flex;
   flex-direction: column;
@@ -59,10 +61,8 @@
 }
 .lang {
   font-size: 18px;
-  margin: 20px;
+  margin: 0 5px;
 }
-
-
 
 .cardContainer {
   display: flex;

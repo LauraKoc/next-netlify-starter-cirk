@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap");
+@import url(https://db.onlinewebfonts.com/c/26e7e4f0192537192e6bfa1d21dee7db?family=ProximaSoft-Thin);
 
 html,
 body {
   padding: 0;
   margin: 0;
   /* font-family: 'Playfair Display', serif; */
-  font-family: "Raleway", sans-serif;
+  font-family: "ProximaSoft-Thin";
   background-color: #010002 ;
   color: white;
 }
